@@ -110,13 +110,13 @@ print(f"{number1}, {number2}, {number3}, {number4}, {number5}")
 # Correcting Invalid Names: Below are some invalid names. Correct them according to the rules:
 
 
-# 1st_name
-# last name
-# email@address
-# percent%
-# variable#name
-# O
-# list
+# 1st_name first_name*
+# last name last_name*
+# email@address email_address*
+# percent% percent*
+# variable#name variable_name*
+# O zero*
+# list list*
 # Creating Valid Names: Create valid names for the following descriptions:
 
 
@@ -138,9 +138,9 @@ print(f"{number1}, {number2}, {number3}, {number4}, {number5}")
 # percentage
 # variable_name
 # 1_variable
-# email@address
-# percentage%
-# i
+# email@address email_address*
+# percentage% percentage*
+# i works but needs more description
 
 
 
