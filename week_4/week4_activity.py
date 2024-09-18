@@ -4,26 +4,47 @@
 ##########################Reviewing somethings
 
 # indexing strings -- slide 4
-my_text = 'this is a text'
+my_text = 'this is a text '
 result = my_text  #get the index of the letter a
-print(result)
+# comptuer code works 1, 2 ,2 ,3 ,4 
+print(result[5])
+# gives a letter
+print(result[10:14])
+# negitive go backward
+print(result[-1])
+# gives a word
+# this is called index slicing this is a way to get a substring from a string
+# substrings are a word in the string 
+
 
 #get the index of the third letter from the end of the text
 
 # find the index of the letter s
+print(result.find('s'))
+print(result.find('text'))
 
+prepRally= "Hancock College Prep cheerleaders are the best!"
+print(prepRally.find('cheerleaders'))
+print(prepRally[21:32])
+# if it prints -1 then its not in the text 
 ###slide 5
 # string[start:stop:step]
 #example
-# text = "Hello, World!"
-# print(text[7:12])  # prints "World"
+text = "Hello, World!"
+print(text[0:12:3])  # prints "World"
 text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 # Get the substring CDE and put in a variable
-
+# find the index of the leter C 
+print(text.find('C'))
+# FIND E 
+print(text.find('E'))
+# use index to get substring
+print(text[2:5])
 #get the first letter all the way to the 4th letter
+print(text[0:4])
 
 #get the first letter to the final letter and skip every 3rd letter
-
+print(text[0:-1:3])
 # Built-in methods:
 # Python has a variety of built-in methods to work with substrings.
 
@@ -36,16 +57,20 @@ text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 #################################Extracting Sub-Strings###################################
 # Extracting Sub-Strings Practice #1
 # Extract the first word of the following sentence using slicing, and display it on the screen:
-# "Controlling complexity is the essence of programming"
+hi ="Controlling complexity is the essence of programming"
+print(hi[0:11])
 # Hint: "Controlling" is 11 characters long.
 
 # Extracting Sub-Strings Practice #2
 # Take every third character starting from the ninth to the end of the sentence, and print the result.
-# "Never trust a computer you can't throw out a window"
+we= "Never trust a computer you can't throw out a window"
+print(we[9:-1])
 
 # Extracting Sub-Strings Practice #3
 # Reverses the position of all the characters in the following sentence and displays the result on the screen.
-# "It's great to work with computers. They don't argue, they remember everything and they don't drink your beer"
+hehe= "It's great to work with computers. They don't argue, they remember everything and they don't drink your beer"
+print(hehe[::-1])
+# how to reverse 
 
 ##################################### String Methods#################################
 # String Methods Practice #1
