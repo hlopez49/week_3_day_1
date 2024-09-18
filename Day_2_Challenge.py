@@ -1,0 +1,5 @@
+name= input("What is your name")
+month_sales = input("How much have you sold this month")
+total_sales= (month_sales*13/100)
+total= (round(total_sales))
+print(name + "you made" + float(total))

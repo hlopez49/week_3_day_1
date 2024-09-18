@@ -120,94 +120,95 @@
 # # Creating Valid Names: Create valid names for the following descriptions:
 
 
-# # The first name of a person
-# # The last name of a person
-# # The email address of a person
-# # The percentage of marks obtained by a student
-# # A variable to store the number of items in a shopping cart
+# # # The first name of a person
+# # # The last name of a person
+# # # The email address of a person
+# # # The percentage of marks obtained by a student
+# # # A variable to store the number of items in a shopping cart
 
 
 
 
-# # Identify Valid and Invalid Names: Identify which of the following names are valid or invalid according to the rules:
+# # # Identify Valid and Invalid Names: Identify which of the following names are valid or invalid according to the rules:
 
 
-# # first_name
-# # lastName
-# # email_address
-# # percentage
-# # variable_name
-# # 1_variable
-# # email@address email_address*
-# # percentage% percentage*
-# # i works but needs more description
-
-
-
+# # # first_name
+# # # lastName
+# # # email_address
+# # # percentage
+# # # variable_name
+# # # 1_variable
+# # # email@address email_address*
+# # # percentage% percentage*
+# # # i works but needs more description
 
 
 
 
 
-# ############################################################################################
 
 
-# # # **Working with** **numbers** **bold text**
-# # We'll learn about the following topics:
-# # 1. Types of Numbers in Python
-# # 2. Basic Arithmetic
-# # 3. Differences between classic division and floor division
+
+# # ############################################################################################
 
 
-# # Python has various "types" of numbers (numeric literals).
-# # 1. We'll mainly focus on integers and floating point numbers.
-# # Integers are just whole numbers, positive or negative. For example: 2 and -2 are examples of integers.
-# # 2. Floating point numbers in Python are notable because they have a decimal point in them, or use an exponential (e) to define the number. For example 2.0 and -2.1 are examples of floating point numbers. 4E2 (4 times 10 to the power of 2) is also an example of a floating point number in Python.
+# # # # **Working with** **numbers** **bold text**
+# # # We'll learn about the following topics:
+# # # 1. Types of Numbers in Python
+# # # 2. Basic Arithmetic
+# # # 3. Differences between classic division and floor division
 
 
-##########################################################################################
-# #addition 
-print(2+1)
-# #multiplication
-print(2*2)
-# #division
-print(3/2)
+# # # Python has various "types" of numbers (numeric literals).
+# # # 1. We'll mainly focus on integers and floating point numbers.
+# # # Integers are just whole numbers, positive or negative. For example: 2 and -2 are examples of integers.
+# # # # 2. Floating point numbers in Python are notable because they have a decimal point in them, or use an exponential (e) to define the number. For example 2.0 and -2.1 are examples of floating point numbers. 4E2 (4 times 10 to the power of 2) is also an example of a floating point number in Python.
 
-# #modulo
-print(7%4)
-# looking for the remainder of two numbers divided
 
-# #powers
-print(2**3)
-# exponent
+# # ##########################################################################################
+# # # #addition 
+# # print(2+1)
+# # # #multiplication
+# # print(2*2)
+# # # #division
+# # print(3/2)
 
-# #get the max and min of a number
-print(max(1,2))
-print(min(1,2))
-# max and min are reserved for python u can't use them as variables
+# # # #modulo
+# # print(7%4)
+# # # looking for the remainder of two numbers divided
 
-# #round a number
-print(round(3,4))
+# # # #powers
+# # print(2**3)
+# # # exponent
 
-# # absolute value
-print(abs(-3))
-# value is the distsance from 0 to the number
-# # order of operations
-print(2 + 10 * 10 + 3)
+# # # #get the max and min of a number
+# # print(max(1,2))
+# # print(min(1,2))
+# # # max and min are reserved for python u can't use them as variables
 
-# #to do more you need to import special math libraries from python
-from math import *    
-# #this goes out and grabs some different math functions we can use
-# #floor method
-print(floor(3.7))
-# rounds up to whole number
-# #ceil method
-print(ceil(3.7))
+# # # #round a number
+# # print(round(3,4))
+# second number saids the decimal point to round to
 
-# #sqrt method
-print(sqrt(36))
+# # # # absolute value
+# # print(abs(-3))
+# # # value is the distsance from 0 to the number
+# # # # order of operations
+# # print(2 + 10 * 10 + 3)
 
-# these 3 will not work without the math libarary
+# # # #to do more you need to import special math libraries from python
+# # from math import *    
+# # # #this goes out and grabs some different math functions we can use
+# # # #floor method
+# # print(floor(3.7))
+# # # rounds up to whole number
+# # # #ceil method
+# # print(ceil(3.7))
+
+# # # #sqrt method
+# # print(sqrt(36))
+
+# # these 3 will not work without the math libarary
 
 
 
@@ -244,10 +245,10 @@ print(max(num1,num2))
 # # find the remainder of the numbers
 print(num1%num2)
 # #round one number
-print(ceil(num1%num2))
+# print(ceil(num1%num2))
 
-
-
+num1= int(input("enter a number: "))
+num2= int(input("enter another number:"))
 
 
 
