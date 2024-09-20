@@ -3,76 +3,127 @@
 
 ##########################Reviewing somethings
 
-# indexing strings -- slide 4
-my_text = 'this is a text '
-result = my_text  #get the index of the letter a
-# comptuer code works 1, 2 ,2 ,3 ,4 
-print(result[5])
-# gives a letter
-print(result[10:14])
-# negitive go backward
-print(result[-1])
-# gives a word
-# this is called index slicing this is a way to get a substring from a string
-# substrings are a word in the string 
+# # indexing strings -- slide 4
+# my_text = 'this is a text '
+# result = my_text  #get the index of the letter a
+# # comptuer code works 1, 2 ,2 ,3 ,4 
+# print(result[5])
+# # gives a letter
+# print(result[10:14])
+# # negitive go backward
+# print(result[-1])
+# # gives a word
+# # this is called index slicing this is a way to get a substring from a string
+# # substrings are a word in the string 
 
 
-#get the index of the third letter from the end of the text
+# #get the index of the third letter from the end of the text
 
-# find the index of the letter s
-print(result.find('s'))
-print(result.find('text'))
+# # find the index of the letter s
+# print(result.find('s'))
+# print(result.find('text'))
 
-prepRally= "Hancock College Prep cheerleaders are the best!"
-print(prepRally.find('cheerleaders'))
-print(prepRally[21:32])
-# if it prints -1 then its not in the text 
-###slide 5
-# string[start:stop:step]
-#example
-text = "Hello, World!"
-print(text[0:12:3])  # prints "World"
-text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-# Get the substring CDE and put in a variable
-# find the index of the leter C 
-print(text.find('C'))
-# FIND E 
-print(text.find('E'))
-# use index to get substring
-print(text[2:5])
-#get the first letter all the way to the 4th letter
-print(text[0:4])
-
-#get the first letter to the final letter and skip every 3rd letter
-print(text[0:-1:3])
-# Built-in methods:
-# Python has a variety of built-in methods to work with substrings.
-
-# a. str.find():
-# This method returns the lowest index of the substring if found in the given string. If it's not found, it returns -1.
+# prepRally= "Hancock College Prep cheerleaders are the best!"
+# print(prepRally.find('cheerleaders'))
+# print(prepRally[21:32])
+# # if it prints -1 then its not in the text 
+# ###slide 5
+# # string[start:stop:step]
+# #example
 # text = "Hello, World!"
-# print(text.find("World"))  # prints 7
-# print(text.find("Earth"))  # prints -1
+# print(text[0:12:3])  # prints "World"
+# text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+# # Get the substring CDE and put in a variable
+# # find the index of the leter C 
+# print(text.find('C'))
+# # FIND E 
+# print(text.find('E'))
+# # use index to get substring
+# print(text[2:5])
+# #get the first letter all the way to the 4th letter
+# print(text[0:4])
 
-#################################Extracting Sub-Strings###################################
-# Extracting Sub-Strings Practice #1
-# Extract the first word of the following sentence using slicing, and display it on the screen:
-hi ="Controlling complexity is the essence of programming"
-print(hi[0:11])
-# Hint: "Controlling" is 11 characters long.
+# #get the first letter to the final letter and skip every 3rd letter
+# print(text[0:-1:3])
+# # Built-in methods:
+# # Python has a variety of built-in methods to work with substrings.
 
-# Extracting Sub-Strings Practice #2
-# Take every third character starting from the ninth to the end of the sentence, and print the result.
-we= "Never trust a computer you can't throw out a window"
-print(we[9:-1])
+# # a. str.find():
+# # This method returns the lowest index of the substring if found in the given string. If it's not found, it returns -1.
+# # text = "Hello, World!"
+# # print(text.find("World"))  # prints 7
+# # print(text.find("Earth"))  # prints -1
 
-# Extracting Sub-Strings Practice #3
-# Reverses the position of all the characters in the following sentence and displays the result on the screen.
-hehe= "It's great to work with computers. They don't argue, they remember everything and they don't drink your beer"
-print(hehe[::-1])
-# how to reverse 
+# #################################Extracting Sub-Strings###################################
+# # Extracting Sub-Strings Practice #1
+# # Extract the first word of the following sentence using slicing, and display it on the screen:
+# hi ="Controlling complexity is the essence of programming"
+# print(hi[0:11])
+# # Hint: "Controlling" is 11 characters long.
+
+# # Extracting Sub-Strings Practice #2
+# # Take every third character starting from the ninth to the end of the sentence, and print the result.
+# we= "Never trust a computer you can't throw out a window"
+# print(we[9:-1])
+
+# # Extracting Sub-Strings Practice #3
+# # Reverses the position of all the characters in the following sentence and displays the result on the screen.
+# hehe= "It's great to work with computers. They don't argue, they remember everything and they don't drink your beer"
+# print(hehe[::-1])
+# # how to reverse 
 
 ##################################### String Methods#################################
+# uppercase method in python 
+sentence= "Especially in electronic commouncations, writing in all caps is equivalent to yelling"
+print(sentence.upper())
+
+# lowercase method
+sentence2= " ESPN IS THE BEST SPORTS NETWORK"
+print(sentence2.lower())
+
+# find the word comms
+print(sentence.find("communcations"))
+# or 
+print(sentence.replace("communications", "COMMUNCATIONS"))
+# or 
+print(sentence.replace("communications", "communcations".upper()))
+
+print(sentence.replace("electronic", "electronic".upper()))
+
+print(sentence.replace("equivalent", "equal"))
+
+new_sentence = "if the implementation is hard to explain, it might be a bad idea."
+print(new_sentence.replace("hard", "easy").replace("bad", "good"))
+
+# join method 
+word_list = ["Simple", "is","better","than","complex."]
+print(word_list)
+joined_sentence= " ".join(word_list)
+# space between "" puts spaces between the words 
+print(joined_sentence)
+
+new_word_list =["apple", "banana", "mango", "cherry", "watermelon😃"]
+joined_new_word_list= " ".join(new_word_list)
+print(joined_new_word_list)
+
+# split method
+sentence4= "I am a python programmer"
+print(sentence4.split()) 
+# splits the sentence into a list of words 
+print(sentence4.split(","))
+# splits the sentence into a list of words taking out the commas
+print(sentence4.split("a"))
+# whatever is in the () is taken out when printed 
+
+# concatenation words in python repition 15 times 
+result = "repetition " * 15
+print(result)
+
+first_paragraph="The unanimous Declaration of the thirteen united States of America, When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation."
+print(first_paragraph.replace("people","citizens").replace(" ", "").replace(",","💀"))
+
+
+
 # String Methods Practice #1
 #slieds 12 -16
 # Print the following text in uppercase, using the specific string method:
